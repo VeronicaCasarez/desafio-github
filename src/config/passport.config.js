@@ -28,9 +28,10 @@ const initializePassport = () => {
             const newUser = {
               first_name,
               last_name,
+              age,
               email,             
               password: createHash(password),
-              age,
+              
 
             };
            
