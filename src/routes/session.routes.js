@@ -5,8 +5,6 @@ import { createHash ,isValidPassword} from "../utils.js";
 import passport from "passport";
 
 
-//import { auth } from "./middlewares.routes.js";
-
 const router = Router();
 
 //ruta para el login usando passport y faillogin
@@ -16,7 +14,6 @@ router.post(
     failureRedirect: "/failLogin",
   }),
   async (req, res) => {
-    console.log(req.user);
     if (!req.user) {
       return res.status(401).json("error de autenticacion");
     }
@@ -29,7 +26,7 @@ router.post(
     };
     req.session.admin = true;
     res.status(200).json({ respuesta: "Autenticado exitosamente" });
-   // res.send({ status: "success", mesage: "user logged", user: req.user });
+  // res.send({ status: "success", mesage: "user logged", user: req.user });
   }
 );
 
