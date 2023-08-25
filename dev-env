@@ -1,0 +1,8 @@
+MONGO_URL="mongodb://localhost:27017"
+PORT="8080"
+DB_USER="userdb"
+DB_PASS="ssssss"
+DB_NAME="users"
+GITHUB_CLIENT_ID="Iv1.6797a44b48b6130d"
+GITHUB_CLIENT_SECRET="9d3b5745fb4273dd0a61d3a1e6b4ed0854738ccf"
+GITHUB_CALLBACK_URL="http://localhost:8080/api/session/githubcallback"
